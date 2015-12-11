@@ -1,0 +1,24 @@
+<div class="panel">
+	<div id="common-object-options" ng-show="isOnlyActiveObject()">
+		<ul id="options-selector" class="list-inline">
+			<li>
+				<button class="btn" ng-click="toggleOpacity();" ng-class="{'btn-primary': enabledOpacity(), 'btn-default': !enabledOpacity()}">Opacity</button>
+			</li>
+			<!--<li>
+				<button class="btn btn-default">Shadow</button>
+			</li>
+			<li>
+				<button class="btn" ng-click="toggleOpacity();" ng-class="{'btn-primary': enabledOpacity(), 'btn-default': !enabledOpacity()}">Opacity</button>
+			</li>
+			<li>
+				<button class="btn btn-default">Color</button>
+			</li>-->
+		</ul>		
+	</div>
+	<div id="options-operator">
+		<div class="object-properties opacity" ng-class="{'active': enabledOpacity()}">
+			<span class="info">0</span>
+			<input type="range" min="0" max="100" bind-value-to="opacity">
+		</div>
+	</div>
+</div>	
