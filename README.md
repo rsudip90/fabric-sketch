@@ -1,4 +1,4 @@
-# fabric-sketch
+
 Canvas App with fabric.js
 
 clone repo and go to directory 
